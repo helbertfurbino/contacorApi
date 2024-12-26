@@ -24,7 +24,7 @@ Listagem de Webhook
 
 ## Instalação
 
-composer require helbertfurbino/contacora-api
+composer require helbertfurbino/contacoraApi
 
 ## Construtor
 
