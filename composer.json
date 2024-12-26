@@ -1,5 +1,5 @@
 {
-    "name": "helbertfurbino/contacora-api",
+    "name": "helbertfurbino/contacoraApi",
     "description": "Pacote genérico para comunicação com o banco Cora para emissão de boletos.",
     "type": "library",
     "require": {
