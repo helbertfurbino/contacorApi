@@ -1,0 +1,23 @@
+{
+    "name": "helbertfurbino/contacora-api",
+    "description": "Pacote genérico para comunicação com o banco Cora para emissão de boletos.",
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "ramsey/uuid": "5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cora\\": "src/Cora/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Helbert Furbino",
+            "email": "helbertsamuel@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
