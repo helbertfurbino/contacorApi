@@ -1,4 +1,4 @@
-# contacora-api
+# contacoraApi
 
 API com funções de boleto para a conta digital PJ Cora. Utiliza modalidade integração direta.
 
