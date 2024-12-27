@@ -1,4 +1,4 @@
-# contacoraApi
+# contacora-api
 
 API com funções de boleto para a conta digital PJ Cora. Utiliza modalidade integração direta.
 
@@ -24,7 +24,7 @@ Listagem de Webhook
 
 ## Instalação
 
-composer require helbertfurbino/contacoraApi
+composer require helbertfurbino/contacora-api
 
 ## Construtor
 
