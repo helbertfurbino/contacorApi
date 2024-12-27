@@ -80,8 +80,8 @@ class ApiCoraBase
 			if (isset($data['access_token'])) {
 				$this->token = $data['access_token'];
 				$expiresInSeconds = $data['expires_in'] ?? self::CACHE_TIME;
-				$this->setCache($this->cacheKey, $this->token, (new DateTime())->modify('+' . $expiresInSeconds . ' seconds'));
 
+				$this->setCache($this->cacheKey, $this->token, (new DateTime())->modify('+' . (string) $expiresInSeconds . ' seconds'));
 
 				return $this->token;
 			} else {
@@ -96,7 +96,7 @@ class ApiCoraBase
 	{
 		$cacheFile =  $key;
 		file_put_contents($cacheFile, $value);
-		touch($cacheFile, time() + $ttl);
+		touch($cacheFile, $ttl->getTimestamp());
 	}
 
 	public function getClient($idempotencyKey = null)
