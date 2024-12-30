@@ -5,11 +5,13 @@ namespace Cora\Exemplos;
 
 use Cora\ApiCora;
 use Cora\DTO\DTOBoleto;
-use Illuminate\Support\Str;
+use Ramsey\Uuid\Uuid;
 
 $cora = new ApiCora('certFile', 'privateKey', 'clientId');
 
-$idempotencyKey = (string) Str::uuid();
+$myuuid = Uuid::uuid4();
+
+$idempotencyKey = $myuuid->toString();
 
 $dtoBoleto = new DTOBoleto();
 
