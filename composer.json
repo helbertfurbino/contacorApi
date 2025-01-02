@@ -5,7 +5,8 @@
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.0",
-        "ramsey/uuid": "^4.0"
+        "ramsey/uuid": "^4.0",
+        "symfony/cache": "7.3.x-dev"
     },
     "autoload": {
         "psr-4": {
