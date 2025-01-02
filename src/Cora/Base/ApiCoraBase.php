@@ -36,7 +36,7 @@ class ApiCoraBase
 
 	private function getCachedToken()
 	{
-		$cacheFile = 'token_cache.txt';
+		$cacheFile = $cacheFile = $this->cacheKey;
 		$cacheTime = self::CACHE_TIME;
 
 		if (file_exists($cacheFile) && time() - $cacheTime < filemtime($cacheFile)) {
